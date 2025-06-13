@@ -79,7 +79,7 @@ To use GPU acceleration, ONNX Runtime requires access to the cuDNN libraries. Sp
 
 You **must**:
 
-1. Download [cuDNN](https://developer.nvidia.com/rdp/cudnn-archive) that matches your installed CUDA version (e.g. CUDA 12.2 → cuDNN 9.x).
+1. Download [cuDNN](https://developer.nvidia.com/cudnn-downloads) that matches your installed CUDA version (e.g. CUDA 12.2 → cuDNN 9.x).
 2. Extract the downloaded files.
 3. Ensure that the directory containing `cudnn64_*.dll` is either:
    - Added to your system `PATH`, or
