@@ -149,7 +149,7 @@ while True:
             match, acc = is_my_face(face.embedding)
             label = f"{'DETECTED' if match else 'NOT'} ({acc:.3f})"
             color = GREEN if match else RED
-            print(f"{color}[DEBUG] Face: accuracy={acc:.3f} | distance={1-acc:.3f} | area={area} → {'V' if match else 'X'}{RESET}")
+            print(f"{color}[DEBUG] Face: accuracy={acc:.3f} | area={area} → {'V' if match else 'X'}{RESET}")
             color_bgr = (0, 255, 0) if match else (0, 0, 255)
             all_faces_info.append(((x1, y1, x2, y2), label, color_bgr))
 
