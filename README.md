@@ -73,6 +73,24 @@ This project is GPU-enabled via ONNX Runtime. To ensure GPU support:
 
 ---
 
+### cuDNN requirement for GPU support
+
+To use GPU acceleration, ONNX Runtime requires access to the cuDNN libraries. Specifically, the `onnxruntime-gpu` package looks for DLL files such as `cudnn64_*.dll`.
+
+You **must**:
+
+1. Download [cuDNN](https://developer.nvidia.com/rdp/cudnn-archive) that matches your installed CUDA version (e.g. CUDA 12.2 → cuDNN 9.x).
+2. Extract the downloaded files.
+3. Ensure that the directory containing `cudnn64_*.dll` is either:
+   - Added to your system `PATH`, or
+   - Placed in the same directory as your Python interpreter or the `onnxruntime_providers_cuda.dll`.
+
+If `cudnn64_9.dll` is missing, you will see an error like:
+```
+error loading onnxruntime_providers_cuda.dll which depends on "cudnn64_9.dll" which is missing.
+```
+Make sure to verify compatibility between your CUDA, cuDNN, and `onnxruntime-gpu` versions.
+
 ## Usage
 
 ### 1. Record your face
