@@ -1,6 +1,6 @@
 # Face Detector Automation System
 
-This project is a facial recognition system designed to trigger actions based on the presence or absence of a specific face. It uses [InsightFace](https://github.com/deepinsight/insightface) for accurate, GPU-accelerated face recognition. This solution is ideal for personal use cases such as automatically locking the system, turning off the screen, unmounting VeraCrypt, or hibernating your PC when your face is no longer detected.
+This project is a facial recognition system designed to trigger actions based on the presence or absence of a specific face. It uses [InsightFace](https://github.com/deepinsight/insightface) for accurate, GPU-accelerated face recognition. This solution is made for personal use cases such as automatically locking the system, turning off the screen or unmounting VeraCrypt and hibernating your PC (therefor locking your drives) when your face is no longer detected.
 
 ---
 
