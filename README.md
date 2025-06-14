@@ -41,7 +41,7 @@ This project is a facial recognition system designed to trigger actions based on
 
    Or manually install:
    ```bash
-   pip install opencv-python insightface numpy keyboard
+   pip install opencv-python insightface numpy keyboard colorama
    ```
 
 3. **Download ONNX model weights:**
