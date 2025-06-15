@@ -206,9 +206,8 @@ while True:
         mode_label = f"Mode: {['', 'Debug', 'Monitor', 'VeraCrypt'][mode]}"
         cv2.putText(frame, mode_label, (10, 30), cv2.FONT_HERSHEY_DUPLEX, 0.6, (255, 255, 255), 1)
         cv2.imshow("Face Detection", frame)
-
-        if cv2.waitKey(1) & 0xFF == ord("q"):
-            break
+        # Removed quit-on-'q' functionality
+        cv2.waitKey(1)
 
 cap.release()
 cv2.destroyAllWindows()
